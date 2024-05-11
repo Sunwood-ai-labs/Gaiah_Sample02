@@ -17,9 +17,3 @@ def test_matrix_reshape():
     new_shape = (4,)
     expected_result = np.array([1, 2, 3, 4])
     assert np.array_equal(matrix_reshape(matrix, new_shape), expected_result)
-
-def test_matrix_reshape():
-    matrix = np.array([[1, 2], [3, 4]])
-    new_shape = (4,)
-    expected_result = np.array([1, 2, 3, 4])
-    assert np.array_equal(matrix_reshape(matrix, new_shape), expected_result)
