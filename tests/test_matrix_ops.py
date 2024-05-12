@@ -1,38 +1,3 @@
-===
-
-# Simple Numpy Calculation
-
-## Description
-このプロジェクトは、numpyを使った簡単な行列計算の例を示しています。行列の積和、転置、形状変更などの基本的な操作を行います。
-
-## File Structure
-```
-- src/
-  - matrix_ops.py
-- tests/
-  - test_matrix_ops.py
-```
-
-## Source Code
-
-### src/matrix_ops.py
-```python
-import numpy as np
-
-def matrix_dot_product(matrix1, matrix2):
-    return np.dot(matrix1, matrix2)
-
-def matrix_transpose(matrix):
-    return np.transpose(matrix)
-
-def matrix_reshape(matrix, new_shape):
-    return np.reshape(matrix, new_shape)
-```
-
-## Test Cases
-
-### tests/test_matrix_ops.py
-```python
 import numpy as np
 from src.matrix_ops import matrix_dot_product, matrix_transpose, matrix_reshape
 
@@ -52,4 +17,3 @@ def test_matrix_reshape():
     new_shape = (4,)
     expected_result = np.array([1, 2, 3, 4])
     assert np.array_equal(matrix_reshape(matrix, new_shape), expected_result)
-```
